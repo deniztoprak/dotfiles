@@ -55,6 +55,9 @@ let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_fixers['json'] = ['prettier']
 let g:ale_fixers['css'] = ['prettier']
+"" activate/deactivate linters
+let g:ale_linters = {}
+let g:ale_linters['html'] = []
 "" run prettier on save
 let g:ale_fix_on_save = 1
 
