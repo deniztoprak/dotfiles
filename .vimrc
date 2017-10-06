@@ -94,7 +94,6 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 "" Show tabline when 2 buffers are open
 let g:airline#extensions#tabline#buffer_min_count = 2
 "" Hide some sections
-let g:airline_section_b = ''
 let g:airline_section_x = ''
 let g:airline_section_y = ''
 let g:airline_section_z = ''
