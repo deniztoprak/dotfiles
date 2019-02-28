@@ -61,6 +61,9 @@ let g:ale_linters = {}
 let g:ale_linters['html'] = []
 "" run prettier on save
 let g:ale_fix_on_save = 1
+" vim-gitgutter
+"" Reduce update time
+set updatetime=100
 
 " ctrlp
 "" Change the default mapping and the default command
