@@ -12,7 +12,6 @@
 
 1. Install brew packages
 `brew install zsh`
-`brew install tmux`
 `brew install zsh-syntax-highlighting`
 `brew install reattach-to-user-namespace`
 
