@@ -16,5 +16,3 @@
 [mergetool]
 	prompt = false
 	keepBackup = false
-[oh-my-zsh]
-	hide-status = 1
