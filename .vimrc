@@ -14,6 +14,7 @@ set ttimeoutlen=0 		" prevents delays on ESC in vim-airline plugin
 " set clipboard^=unnamed	" activate clipboard 
 set fdo-=search			" search only in unfolded text
 set noshowmode			" remove default mode indicator
+set encoding=utf-8
 " nnoremap p p`[v`]=		" auto indent and go to last line after paste
 " vnoremap y y`]			" auto go to last line after yank
 
