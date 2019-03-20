@@ -25,6 +25,9 @@ alias gc='git commit -v'
 alias gco='git checkout'
 #compdef _git gco=git-checkout
 
+alias gb='git branch'
+#compdef _git gb=git-branch
+
 alias ga='git add'
 #compdef _git ga=git-add
 #
