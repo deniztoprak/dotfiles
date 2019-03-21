@@ -1,6 +1,6 @@
 [user]
-	name = *** ***
-	email = ***.***@***.**
+	name = Deniz Toprak
+	email = deniztoprak@users.noreply.github.com
 [core]
 	editor = vim
 	pager = diff-so-fancy | less --tabs=4 -RFX
