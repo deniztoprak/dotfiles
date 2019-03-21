@@ -1,6 +1,7 @@
 [user]
 	name = Deniz Toprak
 	email = deniztoprak@users.noreply.github.com
+	signingkey = CC999D07F72586F6
 [core]
 	editor = vim
 	pager = diff-so-fancy | less --tabs=4 -RFX
@@ -16,3 +17,5 @@
 [mergetool]
 	prompt = false
 	keepBackup = false
+[commit]
+	gpgsign = true
