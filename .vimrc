@@ -53,8 +53,8 @@ set updatetime=100
 let g:ctrlp_map = '<c-p>'
 "" Default open buffer list
 let g:ctrlp_cmd = 'CtrlP'
-"" When invoked without an explicit starting directory, CtrlP will set its working directory
-let g:ctrlp_working_path_mode = 'ra'
+"" Set working directory to current directory
+let g:ctrlp_working_path_mode = ''
 "" Ignore files in .gitignore
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
