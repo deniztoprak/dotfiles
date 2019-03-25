@@ -16,7 +16,8 @@ set fdo-=search			" search only in unfolded text
 set noshowmode			" remove default mode indicator
 set encoding=utf-8
 " nnoremap p p`[v`]=		" auto indent and go to last line after paste
-" vnoremap y y`]			" auto go to last line after yank
+" vnoremap y y`]		" auto go to last line after yank
+set scrolloff=5			" make search results appear with 5 lines offset
 
 " required for Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
