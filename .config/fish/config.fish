@@ -5,3 +5,4 @@ set -x GPG_TTY (tty)
 set fish_color_search_match --background=grey
 set fish_greeting
 set PATH /usr/local/opt/node@10/bin $PATH
+set PATH /usr/local/opt/solidity@4/bin $PATH
