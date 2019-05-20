@@ -7,9 +7,9 @@ set ignorecase		        " ignore case on search
 set hidden		        " keep undo history on buffer change
 set splitbelow                  " open new split/window alwas at the bottom 
 set splitright			" open new split/window alwas at the right 
-" set expandtab                 " use soft tabs and 2 spaces
-" set shiftwidth=2              " use soft tabs and 2 spaces
-" set softtabstop=2             " use soft tabs and 2 spaces
+set expandtab                   " use soft tabs and 2 spaces
+set shiftwidth=2                " use soft tabs and 2 spaces
+set softtabstop=2               " use soft tabs and 2 spaces
 set ttimeoutlen=0 		" prevents delays on ESC in vim-airline plugin
 " set clipboard^=unnamed	" activate clipboard 
 set fdo-=search			" search only in unfolded text
