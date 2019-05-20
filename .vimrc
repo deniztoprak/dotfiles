@@ -19,6 +19,9 @@ set encoding=utf-8
 " vnoremap y y`]		" auto go to last line after yank
 set scrolloff=5			" make search results appear with 5 lines offset
 
+" prevent enter screen and open quic-fix after search
+command -nargs=+ Ggr execute 'silent! Ggrep' <q-args> | cw | redraw!
+
 " required for Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
