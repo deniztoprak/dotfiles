@@ -17,10 +17,10 @@ set noshowmode			" remove default mode indicator
 set encoding=utf-8
 " nnoremap p p`[v`]=		" auto indent and go to last line after paste
 " vnoremap y y`]		" auto go to last line after yank
-set scrolloff=5			" make search results appear with 5 lines offset
+" set scrolloff=5			" make search results appear with 5 lines offset
 
-" prevent enter screen and open quic-fix after search
-command -nargs=+ Ggr execute 'silent! Ggrep' <q-args> | cw | redraw!
+" prevent enter screen and open quick-fix after search
+" command -nargs=+ Ggr execute 'silent! Ggrep' <q-args> | cw | redraw!
 
 " required for Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -30,15 +30,18 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'fatih/vim-go'
 Plugin 'google/vim-searchindex'
+Plugin 'honza/vim-snippets'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
 Plugin 'raimondi/delimitmate'
 Plugin 'scrooloose/nerdtree'
+Plugin 'sirver/ultisnips'
 Plugin 'sjl/gundo.vim'
-Plugin 'tomlion/vim-solidity'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'w0rp/ale'
 
 " required for Vundle (All of your Plugins must be added before the following line)
 call vundle#end()
@@ -48,6 +51,9 @@ filetype plugin indent on
 syntax enable
 set background=dark
 colorscheme solarized
+
+" Vundle compatibility
+set shell=bash
 
 " vim-gitgutter
 "" Reduce update time
@@ -71,6 +77,22 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 map <C-n> :NERDTreeToggle<CR>
 "" Close the NERDTree when it's collapsed
 let NERDTreeQuitOnOpen=1
+
+" ale
+"" add prettier support
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fixers['json'] = ['prettier']
+let g:ale_fixers['css'] = ['prettier']
+""" activate/deactivate linters
+let g:ale_linters = {}
+let g:ale_linters['html'] = []
+" " run prettier on save
+let g:ale_fix_on_save = 1"
+
+
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
